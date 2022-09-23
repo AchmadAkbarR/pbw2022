@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TUGAS WEB</title>
+</head>
+<body>
+    <center>
+    <h1>WINDAH COMEL</h1>
+    <h3>Achmad Akbar R ~ A11.2022.13959</h3>
+    
+    <button onclick="playpause()">play/pause</button>
+    <button onclick="soundon()">sound on</button>
+    <button onclick="soundoff()">sound off</button>
+    <br><br>
+    <video id="myVideo" width="400">
+        <source src="hehe.mp4" type="video/mp4">
+        File not supported...
+    </video>
+    </center>
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+    
+    function playpause(){
+        if (myVideo.paused)
+        myVideo.play();
+        else myVideo.pause();
+    }
+    function soundon(){
+        vid.muted = false;
+    }
+    function soundoff(){
+        vid.muted = true;
+    }
+</script>
+</html>
