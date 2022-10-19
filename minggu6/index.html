@@ -20,7 +20,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tentang Kami</a>
+                <a class="nav-link" href="biodata.html">Tentang Saya</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
@@ -125,6 +125,63 @@
             </div>
         </div>
     </div>
+    <h2>Element Form - HTML 5</h2>
+    <form name="fmhs" method="post" action="proses.php">
+    <table>
+    <tr>
+      <td>NIM</td>
+      <td><input type="number" name="fnim" required></td>
+    </tr>
+    <tr>
+      <td>Nama</td>
+      <td><input type="text" name="nama" required></td>
+    </tr>
+    <tr>
+      <td>Tanggal Lahir</td>
+      <td><input type="date" name="ftanggallahir" required></td>
+    </tr>
+    <tr>
+      <td>Program Studi</td>
+      <td>
+        <select name="programstudi" required>
+            <option>Pilih</option>
+            <option value="A11">S1 - Teknik Informatika</option>
+            <option value="A12">S1 - Sistem Infomasi</option>
+            <option value="A13">D4 - Teknik Informatika</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+      <td>Bidang Minat</td>
+      <td>
+        <input type="checkbox" name="fbidang1"><label>
+              Web Programing
+              </label><br>
+              <input type="checkbox" name="fbidang2"><label>
+              Mobile Programing
+              </label><br>
+              <input type="checkbox" name="fbidang3"><label>
+              Data Science
+              </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Berkas CV</td>
+      <td><input type="file" required></td>
+    </tr>
+    <tr>
+      <td>
+      <td align="left">
+      <input type="hidden" value="rahasia" name="fsubmit">
+      <input type="submit" name="fsubmit" value="KIRIM">
+      </td>
+    </tr>
+    </form>
+    </table>
+    <h1>VIdeo</h1>
+    <video controls width="25%">
+      <source src="solo.mp4" type="video/mp4">
+    </video>
     <footer class="bg-dark text-white mt-5">
         <div class="container py-5">
             <div class="row py-5">
